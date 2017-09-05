@@ -22,7 +22,6 @@ for urls in url_list:
         video = result['entries'][0]
     else:
         video = result
-    print(video.duration)
     p = subprocess.Popen("opera",url)
     time.sleep(video.duration+10)
     p.kill()
